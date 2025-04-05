@@ -4,10 +4,10 @@
   font-size: 20px;
 }
 :root {
-  --primary-color: #2c3e50;
+  --primary-color: #021225;
   --secondary-color: #3498db;
-  --background-color: #ecf0f1;
-  --text-color: #333;
+  --background-color: #45646b;
+  --text-color: #ffffff;
 }
 html {
   scroll-behavior: smooth;
@@ -31,11 +31,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: var(--primary-color);
-  padding: 1rem 3rem;
+  padding: 1rem ;
+  height: 2rem;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 1000;
+  border-bottom: solid;
+  border-color: rgb(229, 157, 0);
 }
 
 nav ul {
@@ -47,6 +50,8 @@ nav ul {
 
 nav ul li {
   margin-right: 1rem;
+  font-weight: bold;
+ 
 }
 
 nav ul li:last-child {
@@ -138,8 +143,62 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
+  position: relative;
+  background: url('../Assets/img/ChatGPT\ Image\ Apr\ 5\,\ 2025\,\ 08_09_24\ PM.png');
+  background-size: cover;
+  background-position-y:-8rem ;
+  background-repeat: no-repeat;
+
+  
 }
+#homeLogo {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#homeLogo img {
+  height: 6rem;
+  position: absolute;
+  z-index: -1;
+  top: calc(50% + 0.5rem);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: slowRotate 30s linear infinite;
+}
+
+#homeLogo a {
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+  color: rgb(56, 25, 109); 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+
+@keyframes slowRotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+
+.roateteImage img {
+  max-width: 60vw;
+  height: auto;
+  animation: spin 20s linear infinite;
+  transition: all 0.3s ease-in-out;
+}
+
 
 .hero h1 {
   font-size: 3rem;
@@ -158,7 +217,7 @@ section {
 button {
   background-color: #4caf50;
   color: white;
-  border: none;
+  border: none; 
   padding: 5px 10px;
   cursor: pointer;
 }
@@ -173,6 +232,7 @@ footer {
   height: 3rem;
   background-color: var(--primary-color);
   color: white;
+  z-index: 1000;
 }
 #insideFooter {
   display: flex;
