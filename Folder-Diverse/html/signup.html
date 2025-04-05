@@ -3,34 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="../style.css" />
+    <title>Autentificare</title>
+    <link rel="stylesheet" href="../css/auth-style.css" />
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.auth-container {
+  display: flex;
+  width: 80%;
+  height: 70%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.auth-left,
+.auth-right {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-left {
+  background-color: #007bff;
+  color: white;
+}
+
+.auth-right {
+  background-color: #ffffff;
+}
+
+form {
+  width: 80%;
+}
+
+form h2 {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Sign Up</h1>
-    </header>
-    <main>
-      <form id="signupForm">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required />
+    <div class="auth-container">
+      <!-- Secțiunea Login -->
+      <div class="auth-left">
+        <form id="loginForm">
+          <h2>Log In</h2>
+          <label for="loginEmail">Email:</label>
+          <input type="email" id="loginEmail" required />
+          <label for="loginPassword">Parolă:</label>
+          <input type="password" id="loginPassword" required />
+          <button type="submit">Autentificare</button>
+        </form>
+      </div>
 
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required />
-
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required />
-
-        <button type="submit">Sign Up</button>
-      </form>
-    </main>
-    <script src="../js/firebase-config.js"></script>
-    <script type="module" src="../js/signup.js"></script>
+      <!-- Secțiunea Sign Up -->
+      <div class="auth-right">
+        <form id="signupForm">
+          <h2>Sign Up</h2>
+          <label for="firstName">Prenume:</label>
+          <input type="text" id="firstName" required />
+          <label for="lastName">Nume:</label>
+          <input type="text" id="lastName" required />
+          <label for="username">Username:</label>
+          <input type="text" id="username" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <label for="password">Parolă:</label>
+          <input type="password" id="password" required />
+          <button type="submit">Creează cont</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="../js/auth.js"></script>
+    <script type="module" src="../js/firebase-config.js"></script>
+<script type="module" src="../js/signup.js"></script>
+<script type="module" src="../js/login.js"></script>
   </body>
 </html>

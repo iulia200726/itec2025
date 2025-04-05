@@ -1,8 +1,7 @@
-// Importă și configurează Firebase
-import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
 
+// Configurația Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyD-3HhK--nt0qlUmQ7GblJ8-bx85VmzS6Q",
   authDomain: "itec2025-87e45.firebaseapp.com",
@@ -13,6 +12,8 @@ const firebaseConfig = {
   measurementId: "G-0ED679DN4L"
 };
 
+// Inițializează Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const db = getFirestore(app);
+const auth = getAuth(app);
+
+export { auth };
