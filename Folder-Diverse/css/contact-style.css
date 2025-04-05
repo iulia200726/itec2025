@@ -6,7 +6,7 @@
 :root {
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
-  --background-color: #000000;
+  --background-color: #ecf0f1;
   --text-color: #333;
 }
 html {
@@ -121,31 +121,10 @@ nav ul li a {
   padding: 1rem;
 } */
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
+nav ul li a:hover {
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
 }
-
-nav ul li {
-  margin-right: 1rem;
-  font-weight: bold;
- 
-}
-
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 1rem;
-}
-
-
-
 
 .logo {
   font-weight: bold;
