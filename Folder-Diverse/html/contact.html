@@ -1,101 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../css/contact-style.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <title>Contact</title>
-  </head>
-  <body>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | CultureDrop</title>
+  <style>
+ 
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+      transition: all 0.3s ease;
+      padding: 2rem;
+    }
+
+    /* Light/Dark mode variables */
+    body.light-mode {
+      --bg: #f9f9f9;
+      --text: #111;
+      --accent: #111;
+      --input-bg: #fff;
+      --input-border: #ccc;
+    }
+
+    body.dark-mode {
+      --bg: #121212;
+      --text: #f0f0f0;
+      --accent: #1db954;
+      --input-bg: #1e1e1e;
+      --input-border: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 2rem;
+      background: var(--input-bg);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    #mode-toggle {
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background-color: var(--accent);
+      color: white;
+      transition: 0.3s;
+    }
+
+    #mode-toggle:hover {
+      opacity: 0.9;
+    }
+
+    form label {
+      display: block;
+      margin: 1rem 0 0.3rem;
+      font-weight: 500;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      background: var(--input-bg);
+      border: 1px solid var(--input-border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    form input:focus, form textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    form button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.2rem;
+      background-color: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+    }
+
+    form button:hover {
+      background-color: #0f8d47;
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    /* Animatie simplă la încărcare */
+    .container {
+      animation: fadeIn 0.8s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body class="light-mode">
+  <div class="container">
     <header>
-      <nav>
-        <ul>
-          <li><a href="../index.html ">Home</a></li>
-          <li>
-            <a href="produse.html">Produse</a>
-          </li>
-          <li>
-            <a href="aboutUs.html">Despre Noi</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-          <li>
-            <a href="news.html">Știri</a>
-          </li>
-          <li>
-            <a href="configurator.html">Configurator</a>
-          </li>
-          <li>
-            <a href="cart.html">Cart</a>
-          </li>
-        </ul>
-        <span class="logo">StaicuComputers</span>
-        <div id="darkModeSwitch">
-          <label class="switch">
-            <input type="checkbox" id="modeSwitch" />
-            <span class="slider round"></span>
-          </label>
-        </div>
-      </nav>
+      <h1>Contactează-ne</h1>
+      <button id="mode-toggle">🌙 Dark Mode</button>
     </header>
-    <section id="contact">
-      <form name="submit-to-google-sheet">
-        <label for="name">Nume:</label>
-        <input
-          type="text"
-          name="name"
-          placeholder="Exemplu: Popescu Ion"
-          required
-        />
 
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          name="email"
-          placeholder="Exemplu: popescu.ion@gmail.com"
-          required
-        />
+    <form id="contact-form">
+      <label for="name">Nume</label>
+      <input type="text" id="name" name="name" required />
 
-        <label for="phone">Nr. de Telefon:</label>
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Exemplu: 0769 696 969"
-          required
-        />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
 
-        <label for="message">Mesaj:</label>
-        <textarea
-          name="message"
-          rows="4"
-          placeholder="Maximum 300 de cuvinte"
-          required
-        ></textarea>
-        <button type="submit" onclick="redirectToAnotherPage()" id="button">
-          Trimite!
-        </button>
-      </form>
-    </section>
+      <label for="message">Mesaj</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Trimite</button>
+    </form>
+
     <footer>
-      <div id="insideFooter">
-        <div class="left-content">
-          <p>Copyrighted @2024StaicuComputers. All rights reserved.</p>
-        </div>
-        <div class="right-content">
-          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-          <a href="https://twitter.com/" class="fa fa-twitter"></a>
-          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-          <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
-        </div>
-      </div>
+      <p>&copy; 2025 CultureDrop. Toate drepturile rezervate.</p>
     </footer>
+  </div>
 
-    <script src="../js/dark-light-switch.js"></script>
-    <script src="../js/contact.js"></script>
-  </body>
+  <script>
+    const modeToggle = document.getElementById("mode-toggle");
+    const body = document.body;
+
+    modeToggle.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      body.classList.toggle("light-mode");
+
+      if (body.classList.contains("dark-mode")) {
+        modeToggle.textContent = "☀️ Light Mode";
+      } else {
+        modeToggle.textContent = "🌙 Dark Mode";
+      }
+    });
+
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Mesajul tău a fost trimis cu succes! (simulat)");
+      this.reset();
+    });
+  </script>
+  
+</body>
 </html>
+
