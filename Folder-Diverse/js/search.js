@@ -3,7 +3,7 @@ function searchProducts() {
     const products = document.querySelectorAll(".grid-item");
   
     products.forEach((product) => {
-      const productName = product.querySelector("p").textContent.toLowerCase();
+      const productName = product.querySelector("h2").textContent.toLowerCase();
       if (productName.includes(input)) {
         product.style.display = "block"; // Afișează produsul
       } else {

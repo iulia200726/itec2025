@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Produse</title>
+    <title>Products</title>
     <link href="../css/produse-style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -31,17 +31,16 @@
         <ul>
           <li id="homeLogo"><img src="../../Assets/img/vinyl.png" alt=""><a href=" ../index.html">Home</a></li>
           <li>
-            <a href="contact.html">Merch</a>
+            <a href="contact.html">Merch & Music</a>
           </li>
           <li>
-            <a href="aboutUs.html">Music</a>
+            <a href="cart.html">Cart</a>
           </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
+    
           <li><a href="signup.html">Sign Up</a></li>
           
         </ul>
+        
         
         <div id="darkModeSwitch">
           <label class="switch">
@@ -62,83 +61,195 @@
   />
 </div>
 
-    <section>
-      <div class="grid-container">
-        <div class="grid-item">
-          <img
-            src="../../Assets/img/asamblare-normal.jpg"
-            alt="Servicii Asamblare Normale"
-          />
-          <p>Servicii Asamblare Normale</p>
-          <a href="../../Fisiere-Produse/assembly/normalAssembly.html"
-            ><button>Detalii</button>
-          </a>
-        </div>
-        <div class="grid-item">
-          <img
-            src="../../Assets/img/asamblare-premium.jpg"
-            alt="Servicii Asamblare Premium"
-          />
-          <p>Servicii Asamblare Premium</p>
-          <a href="../../Fisiere-Produse/assembly/premiumAssembly.html">
-            <button>Detalii</button>
-          </a>
-        </div>
-        <div class="grid-item">
-          <img
-            src="../../Assets/img/asamblare-vip.jpg"
-            alt="Servicii Asamblare Vip"
-          />
-          <p>Servicii Asamblare Vip</p>
-          <a href="../../Fisiere-Produse/assembly/vipAssembly.html"
-            ><button>Detalii</button>
-          </a>
-        </div>
-        <div class="grid-item">
-          <img src="../../Assets/img/placa de baza.jpg" alt="Placi de Baza" />
-          <p>Plăci de Bază</p>
-          <a href="../../Fisiere-Produse/motherboards/motherboards.html"
-            ><button>Detalii</button>
-          </a>
-        </div>
-        <div class="grid-item">
-          <img src="../../Assets/img/procesor.jpg" alt="Procesoare" />
-          <p>Procesoare</p>
-          <a href="../../Fisiere-Produse/processors/processors.html"
-            ><button>Detalii</button>
-          </a>
-        </div>
-        <div class="grid-item">
-          <img src="../../Assets/img/placi video.jpg" alt="Placi Video  " />
-          <p>Plăci Video</p>
-          <a href="../../Fisiere-Produse/videoCards/videoCards.html "
-            ><button>Detalii</button></a
-          >
-        </div>
-        <div class="grid-item">
-          <img src="../../Assets/img/cooler.jpg" alt="Coolere" />
-          <p>Coolere</p>
-          <a href="../../Fisiere-Produse/coolers/coolers.html"
-            ><button>Detalii</button>
-          </a>
-        </div>
-        <div class="grid-item">
-          <img src="../../Assets/img/coming soon.png" alt="Soon" />
-          <p>Memorii Ram</p>
-          <button class="blocked-button">Detalii</button>
-        </div>
-        <div class="grid-item">
-          <img src="../../Assets/img/coming soon.png" alt="Soon" />
-          <p>Stocare</p>
-          <button class="blocked-button">Detalii</button>
-        </div>
-      </div>
-    </section>
+<section>
+  <div class="grid-container">
+    <!-- Grid Item 1 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/WhatsApp Image 2025-04-05 at 23.49.16_c83937b2.jpg" alt="Produs 1" />
+      <h2>Product name1</h2>
+      <p>Price: 200 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 200)"
+        >
+          Buy
+        </button>
+    </div>
+    <!-- Grid Item 2 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/WhatsApp Image 2025-04-05 at 23.49.33_eee5adde.jpg" alt="Produs 2" />
+      <h2>Product name</h2>
+      <p>Price: 300 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 300)"
+        >
+          Buy
+        </button>
+    </div>
+    <!-- Grid Item 3 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/WhatsApp Image 2025-04-05 at 23.49.34_89c4a2df.jpg" alt="Produs 3" />
+      <h2>Product name</h2>
+      <p>Price: 400 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 400)"
+        >
+          Buy
+        </button>
+    </div>
+    <!-- Grid Item 4 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/WhatsApp Image 2025-04-05 at 23.49.34_48b7d6ea.jpg" alt="Produs 4" />
+      <h2>Product name</h2>
+      <p>Price: 500 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 500)"
+        >
+          Buy
+        </button>
+    </div>
+    <!-- Grid Item 5 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/WhatsApp Image 2025-04-05 at 23.49.34_3f38df2a.jpg" alt="Produs 5" />
+      <h2>Product name</h2>
+      <p>Price: 600 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 600)"
+        >
+          Buy
+        </button>
+    </div>
+    <!-- Grid Item 6 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/WhatsApp Image 2025-04-05 at 23.49.34_ae26552f.jpg" alt="Produs 6" />
+      <h2>Product name</h2>
+      <p>Price: 700 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 700)"
+        >
+          Buy
+        </button>
+    </div>
+    <!-- Grid Item 7 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/WhatsApp Image 2025-04-05 at 23.49.33_fef0df8c.jpg" alt="Produs 7" />
+      <h2>Product name</h2>
+      <p>Price: 150 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 150)"
+        >
+          Buy
+        </button>
+    </div>
+    <!-- Grid Item 8 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/WhatsApp Image 2025-04-05 at 23.49.34_ff018b38.jpg" alt="Produs 8" />
+      <h2>Product name</h2>
+      <p>Price: 250 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 250)"
+        >
+          Buy
+        </button>
+    </div>
+    <!-- Grid Item 9 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/WhatsApp Image 2025-04-05 at 23.49.34_5864314c.jpg" alt="Produs 9" />
+      <h2>Product name</h2>
+      <p>Price: 350 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 350)"
+        >
+          Buy
+        </button>
+    </div>
+    <!-- Grid Item 10 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/WhatsApp Image 2025-04-05 at 23.49.34_d852502e.jpg" alt="Produs 10" />
+      <h2>Product name</h2>
+      <p>Price: 450 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 450)"
+        >
+          Buy
+        </button>
+    </div>
+    <!-- Grid Item 11 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/WhatsApp Image 2025-04-05 at 23.49.34_78c7d058.jpg" alt="Produs 11" />
+      <h2>Product name</h2>
+      <p>Price: 550 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 550)"
+        >
+          Buy
+        </button>
+    </div>
+    <!-- Grid Item 12 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/WhatsApp Image 2025-04-05 at 23.49.34_88c76bca.jpg" alt="Produs 12" />
+      <h2>Product name</h2>
+      <p>Price: 650 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 650)"
+        >
+          Buy
+        </button>
+    </div>
+    <!-- Grid Item 13 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/WhatsApp Image 2025-04-05 at 23.49.35_fdb05138.jpg" alt="Produs 13" />
+      <h2>Product name</h2>
+      <p>Price: 750 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 750)"
+        >
+          Buy
+        </button>
+    </div>
+    <!-- Grid Item 14 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/coming soon.png" alt="Produs 14" />
+      <h2>Product name</h2>
+      <p>Price: 850 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 850)"
+        >
+          Buy
+        </button>
+    </div>
+    <!-- Grid Item 15 -->
+    <div class="grid-item">
+      <img src="../../Assets/img/coming soon.png" alt="Produs 15" />
+      <h2>Product name</h2>
+      <p>Price: 950 RON</p>
+      <button
+          class="buy-button1"
+          onclick="addToCart('Asamblare Normală', 950)"
+        >
+          Buy
+        </button>
+    </div>
+  </div>
+</section>
 
     <footer>
       <div id="insideFooter">
         <div class="left-content">
-          <p>Copyrighted @2024StaicuComputers. All rights reserved.</p>
+          <p>Copyrighted @2024CultureDrop. All rights reserved.</p>
         </div>
         <div class="right-content">
           <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
@@ -151,5 +262,6 @@
 
     <script src="../js/dark-light-switch.js"></script>
     <script src="../js/search.js"></script>
+    <script src="../js/cart.js"></script>
   </body>
 </html>
