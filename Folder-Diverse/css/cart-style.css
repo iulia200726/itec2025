@@ -38,6 +38,32 @@ nav {
   z-index: 1000;
 }
 
+/* nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+nav ul li a:hover {
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+} */
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -47,6 +73,8 @@ nav ul {
 
 nav ul li {
   margin-right: 1rem;
+  font-weight: bold;
+ 
 }
 
 nav ul li:last-child {
