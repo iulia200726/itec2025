@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produse</title>
+    <link href="../css/cart-style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html ">Home</a></li>
+          <li>
+            <a href="produse.html">Produse</a>
+          </li>
+          <li>
+            <a href="aboutUs.html">Despre Noi</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="news.html">Știri</a>
+          </li>
+          <li>
+            <a href="configurator.html">Configurator</a>
+          </li>
+          <li>
+            <a href="cart.html">Cart</a>
+          </li>
+        </ul>
+        <span class="logo">StaicuComputers</span>
+        <div id="darkModeSwitch">
+          <label class="switch">
+            <input type="checkbox" id="modeSwitch" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h1>Coș de cumpărături</h1>
+      <div id="cart-items" class="cart-items"></div>
+      <button id="checkout-button" class="checkout-button">Plătește</button>
+      <button id="clear-cart-button" class="clear-cart-button">Clear</button>
+    </section>
+
+    <footer>
+      <div id="insideFooter">
+        <div class="left-content">
+          <p>Copyrighted @2024StaicuComputers. All rights reserved.</p>
+        </div>
+        <div class="right-content">
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+          <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/dark-light-switch.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/checkout.js"></script>
+    <script src="../js/clear.js"></script>
+  </body>
+</html>

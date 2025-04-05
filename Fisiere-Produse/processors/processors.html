@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StaicuComputers</title>
+    <link rel="stylesheet" href="../produsePrezentare-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../Folder-Diverse/index.html ">Home</a></li>
+          <li>
+            <a href="../../Folder-Diverse/html/produse.html">Produse</a>
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/aboutUs.html">Despre Noi</a>
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/news.html">Știri</a>
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/configurator.html"
+              >Configurator</a
+            >
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/cart.html">Cart</a>
+          </li>
+        </ul>
+        <span class="logo">StaicuComputers</span>
+        <div id="darkModeSwitch">
+          <label class="switch">
+            <input type="checkbox" id="modeSwitch" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="product-container">
+        <div class="product-box">
+          <h2>Procesor Intel I5</h2>
+          <div
+            class="product-img"
+          > <img src="intel-i5.png" alt="INTEL I5"></div>
+          <div class="product-description">
+            <p>
+              Fiabil, echilibrat, performant pentru sarcini variate și gaming moderat.
+            </p>
+          </div>
+          <button
+          class="buy-button"
+          onclick="addToCart('Procesor Intel I5', 450)"
+        >
+          Cumpără (450 ron)
+        </button>
+        </div>
+        <div class="product-box">
+          <h2>Procesor Intel I7</h2>
+          <div
+            class="product-img"
+          > <img src="intel-i7.jpg" alt="INTEL I7"></div>
+          <div class="product-description">
+            <p>
+              Puternic, rapid, eficient, ideal pentru sarcini intensive și gaming.
+            </p>
+          </div>
+          <button
+          class="buy-button"
+          onclick="addToCart('Procesor Intel I7', 400)"
+        >
+          Cumpără (400 ron)
+        </button>
+        </div>
+        <div class="product-box">
+          <h2>Procesor AMD Ryzen 7</h2>
+          <div
+            class="product-img"
+          > <img src="amd.jpg" alt="AMD"></div>
+          <div class="product-description">
+            <p>
+              Puternic, eficient, performant, ideal pentru gaming și multitasking intensiv.
+            </p>
+          </div>
+          <button
+          class="buy-button"
+          onclick="addToCart('Procesor AMD Ryzen 7', 500)"
+        >
+          Cumpără (500 ron)
+        </button>
+        </div>
+      </div>
+    <script src="../../Folder-Diverse/js/dark-light-switch.js"></script>
+    <script src="../../Folder-Diverse/js/cart.js"></script>
+
+  </body>
+</html>

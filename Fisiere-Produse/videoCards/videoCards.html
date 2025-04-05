@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StaicuComputers</title>
+    <link rel="stylesheet" href="../produsePrezentare-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../Folder-Diverse/index.html ">Home</a></li>
+          <li>
+            <a href="../../Folder-Diverse/html/produse.html">Produse</a>
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/aboutUs.html">Despre Noi</a>
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/news.html">Știri</a>
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/configurator.html"
+              >Configurator</a
+            >
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/cart.html">Cart</a>
+          </li>
+        </ul>
+        <span class="logo">StaicuComputers</span>
+        <div id="darkModeSwitch">
+          <label class="switch">
+            <input type="checkbox" id="modeSwitch" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="product-container">
+        <div class="product-box">
+          <h2>Placă video ASUS</h2>
+          <div class="product-img">
+            <img src="placa-asus.jpg" alt="ASUS" srcset="" />
+          </div>
+          <div class="product-description">
+            <p>
+              Fiabilă, performantă, cu design de vârf pentru gaming și
+              productivitate.
+            </p>
+          </div>
+          <button
+            class="buy-button"
+            onclick="addToCart('Placă video ASUS', 450)"
+          >
+            Cumpără (450 ron)
+          </button>
+        </div>
+        <div class="product-box">
+          <h2>Placă video MSI</h2>
+          <div class="product-img">
+            <img src="msi.png" alt="MSI" srcset="" />
+          </div>
+          <div class="product-description">
+            <p>
+              Inovativă, performantă, cu tehnologie avansată pentru gaming și
+              producție multimedia.
+            </p>
+          </div>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Placă video MSI', 400)"
+          >
+            Cumpără (400 ron)
+          </button>
+        </div>
+        <div class="product-box">
+          <a name="product">Placă video GIGABYTE</a>
+          <div class="product-img">
+            <img src="gigabyte.jpg" alt="GIGABYTE" srcset="" />
+          </div>
+          <div class="product-description">
+            <p>
+              Puternică, performantă, grafică de vârf pentru gaming și design
+              profesional.
+            </p>
+          </div>
+          <button
+            class="buy-button"
+            onclick="addToCart('Placă video GIGABYTE', 500)"
+          >
+            Cumpără (500 ron)
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="../../Folder-Diverse/js/dark-light-switch.js"></script>
+    <script src="../../Folder-Diverse/js/cart.js"></script>
+    <script src="../../Folder-Diverse/js/orderData.js"></script>
+  </body>
+</html>

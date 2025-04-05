@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StaicuComputers</title>
+    <link rel="stylesheet" href="../produsePrezentare-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../Folder-Diverse/index.html ">Home</a></li>
+          <li>
+            <a href="../../Folder-Diverse/html/produse.html">Produse</a>
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/aboutUs.html">Despre Noi</a>
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/news.html">Știri</a>
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/configurator.html"
+              >Configurator</a
+            >
+          </li>
+          <li>
+            <a href="../../Folder-Diverse/html/cart.html">Cart</a>
+          </li>
+        </ul>
+        <span class="logo">StaicuComputers</span>
+        <div id="darkModeSwitch">
+          <label class="switch">
+            <input type="checkbox" id="modeSwitch" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="product-container">
+        <div class="product-box">
+          <h2>Placă de bază ASUS</h2>
+          <div class="product-img"><img src="asus.jpg" alt="ASUS" /></div>
+          <div class="product-description">
+            <p>
+              Placă de bază ASUS: Fiabilă, performantă, inovatoare, calitate,
+              tehnologie, overclocking, conectivitate, durabilă, eficientă,
+              diversificată.
+            </p>
+          </div>
+          <button
+            class="buy-button"
+            onclick="addToCart('Placă de bază ASUS', 450)"
+          >
+            Cumpără (450 ron)
+          </button>
+        </div>
+        <div class="product-box">
+          <h2>Placă de bază MSI</h2>
+          <div class="product-img">
+            <img src="msi.jpg" alt="MSI" />
+          </div>
+          <div class="product-description">
+            <p>
+              Placa de bază MSI: Fiabilă, performantă, inovatoare, calitate,
+              tehnologie, overclocking, conectivitate, durabilă, eficientă,
+              gaming.
+            </p>
+          </div>
+          <button
+            class="buy-button"
+            onclick="addToCart('Placă de bază MSI', 400)"
+          >
+            Cumpără (400 ron)
+          </button>
+        </div>
+        <div class="product-box">
+          <h2>Placă de baza GIGABYTE</h2>
+          <div class="product-img">
+            <img src="gigabyte.jpg" alt="GIGABYTE" />
+          </div>
+          <div class="product-description">
+            <p>
+              Placa de bază Gigabyte: Fiabilă, performantă, inovatoare,
+              calitate, tehnologie, overclocking, conectivitate, durabilă,
+              eficientă, gaming.
+            </p>
+          </div>
+          <button
+            class="buy-button"
+            onclick="addToCart('Placă de bază GIGABYTE', 500)"
+          >
+            Cumpără (500 ron)
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="../../Folder-Diverse/js/dark-light-switch.js"></script>
+    <script src="../../Folder-Diverse/js/cart.js"></script>
+  </body>
+</html>

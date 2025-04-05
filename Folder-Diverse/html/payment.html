@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="../css/payment-style.css" />
+  </head>
+  <body>
+    <h2>Comandă chiar acum!</h2>
+    <section id="contact">
+      <form name="submit-to-google-sheet">
+        <label for="name">Nume:</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Exemplu: Popescu Ion"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Exemplu: popescu.ion@gmail.com"
+          required
+        />
+
+        <label for="phone">Nr. de Telefon:</label>
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Exemplu: 0769 696 969"
+          required
+        />
+        <label for="address">Adresă:</label>
+        <input
+          type="text"
+          name="address"
+          placeholder="Exemplu: Strada Bossul Nr. 69"
+          required
+        />
+
+        <div class="main">
+          <div id="smart-button-container">
+            <div style="text-align: center">
+              <div id="paypal-button-container"></div>
+            </div>
+          </div>
+          <script
+            src="https://www.paypal.com/sdk/js?client-id=AWeG6W_PBor5ufywapHakFzvpa0qAw7AD1bStsFzHnnW3Y6CFUVytbFi-ZczLmbE9bzovkYFogzojXPW&enable-funding=venmo&currency=USD"
+            data-sdk-integration-source="button-factory"
+          ></script>
+          <script src="../js/payment.js"></script>
+        </div>
+        <button id="button" type="submit">Comandă!</button>
+      </form>
+    </section>
+    <script src="../js/orderData.js"></script>
+  </body>
+</html>
