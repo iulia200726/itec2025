@@ -9,6 +9,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <style>
+      .search-container {
+  text-align: center;
+  margin: 100px 0;
+}
+
+#searchBar {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+    </style>
   </head>
   <body>
     <header>
@@ -43,6 +57,17 @@
         </div>
       </nav>
     </header>
+
+    <!-- Search bar -->
+<div class="search-container">
+  <input
+    type="text"
+    id="searchBar"
+    placeholder="Caută produse..."
+    onkeyup="searchProducts()"
+  />
+</div>
+
     <section>
       <div class="grid-container">
         <div class="grid-item">
@@ -131,5 +156,6 @@
     </footer>
 
     <script src="../js/dark-light-switch.js"></script>
+    <script src="../js/search.js"></script>
   </body>
 </html>
