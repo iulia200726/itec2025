@@ -4,5 +4,5 @@ function addToCart(productName, productPrice) {
   const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
   cart.push(cartItem);
   sessionStorage.setItem("cart", JSON.stringify(cart));
-  alert(`${productName} a fost adăugat în coș!`);
+  alert(`${productName} was added to cart!`);
 }

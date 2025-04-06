@@ -243,9 +243,17 @@ nav ul li a:hover {
   border-radius: 50%;
 }
 
-.dark-mode {
-  background-color: #333;
-  color: #fff;
+.dark-mode .grid-item {
+  background-color: #192a56; /* Albastru închis */
+  color: #fff; /* Text alb */
+  border-radius: 10px; /* Rotunjire colțuri */
+  padding: 20px; /* Spatiere */
+}
+.dark-mode{
+  background-color: #222734; /* Albastru închis */
+  color: #fff; /* Text alb */
+  border-radius: 10px; /* Rotunjire colțuri */
+  padding: 20px; /* Spatiere */
 }
 
 .logo {
